@@ -1,20 +1,20 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 h1, p{
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 #container{
-	width: 900px;
-	margin: 0 auto;
+    width: 900px;
+    margin: 0 auto;
 }
 
 #header,
 #content,
 #footer{
-	border: 1px solid black;
+    border: 1px solid black;
     background: #ccc;
 }
 
@@ -33,23 +33,23 @@ h1, p{
 }
 
 * html #content{ 
-	height: 1%; /* IE6 additional trick, triggers hasLayout */
+    height: 1%; /* IE6 additional trick, triggers hasLayout */
 }
 
 #leftcol,
 #rightcol{
     padding: 10px;
-	width: 427px;
+    width: 427px;
 }
 
 #leftcol{
     float: left;
-	border: 1px solid #800;
-	background: #f00;
+    border: 1px solid #800;
+    background: #f00;
 }
 
 #rightcol{
     float: right;
-	border: 1px solid #080;
-	background: #0f0;
+    border: 1px solid #080;
+    background: #0f0;
 }
