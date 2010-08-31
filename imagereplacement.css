@@ -1,0 +1,6 @@
+h1{
+	background: url(magic.gif) no-repeat;
+	width: 313px;
+	height: 313px;
+	text-indent: -2000px; /* make the text disappear */
+}
