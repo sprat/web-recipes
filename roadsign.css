@@ -1,0 +1,35 @@
+.directions{
+	padding: 20px;
+}
+
+a.roadsign{
+	float: left;
+	clear: left;
+	display: inline-block;
+	height: 110px;
+	margin: 0 20px 20px 0;
+	padding: 0 60px 0 30px;
+
+    /* image size is 55 x 110 pixels, with 8px rounding */
+    color:#fff;
+    background: url(roadsign-right-end.png) no-repeat right #000;  /* right-end image + black background */
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+	
+    line-height: 110px; /* center the line vertically */
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+a.roadsign:hover{
+    text-decoration: none;
+}
