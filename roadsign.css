@@ -1,16 +1,35 @@
 body{
 	margin: 0;
-	padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: #aaa;
 }
 
-.directions{
-	overflow: auto; /* should contain its floated elements */
-	padding: 40px;
+#container {
+	width: 1000px;
+	margin: 30px auto 0;
+    border: 1px solid black;    
+    padding: 30px;	
+    background-color: #fff;
+}
+
+h1 {
+	margin: 0;
+    padding-bottom: 30px;
+    color: #0088ff;
+	font-size: 5em;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+/*.directions{
+    padding: 0;	
+}
+*/
+.directions li{
+	list-style: none;
 }
 
 a.roadsign{
-	float: left;
-	clear: left;
 	display: inline-block;
 	height: 110px;
 	margin-bottom: 40px;
@@ -28,7 +47,6 @@ a.roadsign{
 	
     line-height: 110px; /* center the line vertically */
 
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 3em;
     text-decoration: none;
