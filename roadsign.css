@@ -11,6 +11,7 @@ body{
     border: 1px solid black;    
     padding: 30px;	
     background-color: #fff;
+	text-align: center;
 }
 
 h1 {
@@ -25,7 +26,7 @@ h1 {
 ul.directions {
 	overflow: auto;
 	margin: 0;
-	padding-left: 30px;
+	padding: 0 30px;
 }
 
 .directions li{
