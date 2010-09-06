@@ -1,5 +1,11 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
 .directions{
-	padding: 20px;
+	overflow: auto; /* should contain its floated elements */
+	padding: 40px;
 }
 
 a.roadsign{
@@ -7,7 +13,7 @@ a.roadsign{
 	clear: left;
 	display: inline-block;
 	height: 110px;
-	margin: 0 20px 20px 0;
+	margin-bottom: 40px;
 	padding: 0 60px 0 30px;
 
     /* sprite size is 55 x 110 pixels, with 8px rounding */
