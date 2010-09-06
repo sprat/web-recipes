@@ -10,9 +10,9 @@ a.roadsign{
 	margin: 0 20px 20px 0;
 	padding: 0 60px 0 30px;
 
-    /* image size is 55 x 110 pixels, with 8px rounding */
+    /* sprite size is 55 x 110 pixels, with 8px rounding */
     color:#fff;
-    background: url(roadsign-right-end.png) no-repeat right #000;  /* right-end image + black background */
+    background: url(roadsign-end.png) no-repeat top right #000;  /* right-end image + black background */
     -webkit-border-top-left-radius: 8px;
     -webkit-border-bottom-left-radius: 8px;
     -moz-border-radius-topleft: 8px;
@@ -31,5 +31,7 @@ a.roadsign{
 }
 
 a.roadsign:hover{
+	background-color: #0088ff;
+	background-position: 100% -220px;
     text-decoration: none;
 }
