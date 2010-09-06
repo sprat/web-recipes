@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 	background-color: #aaa;
 }
@@ -19,6 +20,11 @@ h1 {
 	font-size: 5em;
 	font-weight: bolder;
 	text-transform: uppercase;
+}
+
+.directions {
+	margin: 0;
+	padding-left: 30px;
 }
 
 .directions li{
