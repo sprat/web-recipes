@@ -22,30 +22,38 @@ h1 {
 	text-transform: uppercase;
 }
 
-.directions {
+ul.directions {
+	overflow: auto;
 	margin: 0;
 	padding-left: 30px;
 }
 
 .directions li{
 	list-style: none;
+    float: left;
+    clear: left;  
 }
 
-a.roadsign{
+.directions li.rightward{
+    float: right;
+    clear: right;  
+}
+
+/* sprite size is 55 x 110 pixels, with 8px rounding */
+.roadsign{ /* rightward by default */
 	display: inline-block;
 	height: 110px;
 	margin-bottom: 40px;
-	padding: 0 60px 0 30px;
+    padding: 0 30px 0 60px;     
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 
-    /* sprite size is 55 x 110 pixels, with 8px rounding */
     color:#fff;
-    background: url(roadsign-end.png) no-repeat top right #000;  /* right-end image + black background */
-    -webkit-border-top-left-radius: 8px;
-    -webkit-border-bottom-left-radius: 8px;
-    -moz-border-radius-topleft: 8px;
-    -moz-border-radius-bottomleft: 8px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    background: url(roadsign-end.png) #000 no-repeat 0 -110px;
 	
     line-height: 110px; /* center the line vertically */
 
@@ -56,8 +64,23 @@ a.roadsign{
 	letter-spacing: 2px;
 }
 
-a.roadsign:hover{
-	background-color: #0088ff;
-	background-position: 100% -220px;
+.roadsign:hover{
+    background-color: #0088ff;
+    background-position: 0 -330px;
     text-decoration: none;
+}
+
+.rightward .roadsign{
+    padding: 0 60px 0 30px;
+    background-position: 100% 0;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rightward .roadsign:hover{
+   background-position: 100% -220px;
 }
