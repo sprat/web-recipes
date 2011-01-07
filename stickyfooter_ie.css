@@ -5,6 +5,6 @@
 }
 *+html #container{  /* IE7 */
     display: block;
-	min-height: 100%;
+    min-height: 100%;
     height: auto;
 }

@@ -10,32 +10,34 @@
 }
 
 html, body{
-	height: 100%;  /* 100% high viewport */
+    height: 100%;  /* 100% high viewport */
 }
 
 #container{
-	min-height: 100%;
+    min-height: 100%;
     width: 900px;
-	margin: 0 auto;      
+    margin: 0 auto;      
     background: #888;
 }
 
 /* Opera "redraw" bug fix */
 body:before {  
-	content: "";
-	float: left;
-	height: 100%;
-	margin-top: -999em;
+    content: "";
+    float: left;
+    height: 100%;
+    margin-top: -999em;
 }
 
 #header{
-	height: 120px;
-    background: #c00;	
+    height: 120px;
+    background: #c00;
 }
+
 #content{
     background: #0c0;
     padding-bottom: 120px;  /* = height of the footer */
 }
+
 #footer{
     height: 120px;
     width: 900px;      

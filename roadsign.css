@@ -1,36 +1,36 @@
 body{
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-	background-color: #aaa;
+    background-color: #aaa;
 }
 
 #container {
-	width: 1000px;
-	margin: 30px auto;
+    width: 1000px;
+    margin: 30px auto;
     border: 1px solid black;    
-    padding: 30px;	
+    padding: 30px;    
     background-color: #fff;
-	text-align: center;
+    text-align: center;
 }
 
 h1 {
-	margin: 0;
+    margin: 0;
     padding-bottom: 30px;
     color: #0088ff;
-	font-size: 5em;
-	font-weight: bolder;
-	text-transform: uppercase;
+    font-size: 5em;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 ul.directions {
-	overflow: auto;
-	margin: 0;
-	padding: 0 30px;
+    overflow: auto;
+    margin: 0;
+    padding: 0 30px;
 }
 
 .directions li{
-	list-style: none;
+    list-style: none;
     float: left;
     clear: left;  
 }
@@ -42,9 +42,9 @@ ul.directions {
 
 /* sprite size is 55 x 110 pixels, with 8px rounding */
 .roadsign{ /* rightward by default */
-	display: inline-block;
-	height: 110px;
-	margin-bottom: 40px;
+    display: inline-block;
+    height: 110px;
+    margin-bottom: 40px;
     padding: 0 30px 0 60px;     
     -webkit-border-top-right-radius: 8px;
     -webkit-border-bottom-right-radius: 8px;
@@ -55,14 +55,14 @@ ul.directions {
 
     color:#fff;
     background: url(roadsign-end.png) #000 no-repeat 0 -110px;
-	
+    
     line-height: 110px; /* center the line vertically */
 
     font-weight: bolder;
     font-size: 3em;
     text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .roadsign:hover{
@@ -83,5 +83,5 @@ ul.directions {
 }
 
 .rightward .roadsign:hover{
-   background-position: 100% -220px;
+    background-position: 100% -220px;
 }
