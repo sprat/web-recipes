@@ -1,6 +1,14 @@
-h1{
+.replacement1{
     background: url(magic.gif) no-repeat;
     width: 313px;
     height: 313px;
-    text-indent: -2000px; /* make the text disappear */
+    text-indent: -9999px;  /* move the text outside of the box */
+}
+
+.replacement2{
+    background: url(magic.gif) no-repeat;
+    width: 313px;
+    padding-top: 313px;  /* in fact, the height of the image */
+    height: 0;  /* will hide the text in conjunction with overflow hidden */
+    overflow: hidden;
 }
