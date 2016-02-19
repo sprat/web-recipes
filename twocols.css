@@ -12,7 +12,7 @@ html {
 }
 
 header,
-section,
+main,
 footer {
     border: 1px solid black;
     background: #ccc;
@@ -21,7 +21,7 @@ footer {
 }
 
 header,
-section {
+main {
     margin-bottom: 10px;
 }
 
@@ -30,7 +30,7 @@ footer {
     padding: 10px;
 }
 
-section {
+main {
     overflow: auto; /* trick to get the float cleared */
 }
 
