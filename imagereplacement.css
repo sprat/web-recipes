@@ -1,14 +1,23 @@
 .replacement1 {
-    background: url(magic.gif) no-repeat;
-    width: 313px;
-    height: 313px;
-    text-indent: -9999px;  /* move the text outside of the box */
+    background: url(magic.png) no-repeat;
+    width: 64px;
+    height: 64px;
+    text-indent: 100%;  /* move the text outside of the box */
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .replacement2 {
-    background: url(magic.gif) no-repeat;
-    width: 313px;
-    padding-top: 313px;  /* in fact, the height of the image */
+    background: url(magic.png) no-repeat;
+    width: 64px;
+    padding-top: 64px;  /* in fact, the height of the image */
     height: 0;  /* will hide the text in conjunction with overflow hidden */
     overflow: hidden;
+}
+
+.replacement3 {
+    background: url(magic.png) no-repeat;
+    width: 64px;
+    height: 64px;
+    font-size: 0;
 }
