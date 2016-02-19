@@ -1,36 +1,48 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-html,
-body {
+html, body {
     height: 100%;  /* 100% high viewport */
 }
 
 #container {
     min-height: 100%;
-    background: #888;
+    padding-bottom: 120px;
 }
 
 #container,
 footer {
-    width: 900px;
+    width: 960px;
     margin: 0 auto;
 }
 
-header {
-    height: 120px;
-    background: #c00;
-}
-
-section {
-    background: #0c0;
-    padding-bottom: 120px;  /* = height of the footer */
+header,
+footer,
+main {
+    padding: 10px;
 }
 
 footer {
     height: 120px;
-    margin-top: -120px;  /* margin-top = height of the footer */
-    background: #00c;
+    margin-top: -120px;
+}
+
+header,
+footer {
+    color: #FFF;
+    background: #000;
+}
+
+main {
+    background: #DDD;
 }
