@@ -1,32 +1,30 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
    "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Move it!</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="moveit.css">	
-</head>
-
-<body>
-   
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Move it!</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="moveit.css">
+  </head>
+  <body>
     <script type='text/javascript'>
     function moveEl(x, y) {
         var el = document.getElementById('el');
-        el.style.left = (parseInt(el.style.left) + x) + "px";         
-        el.style.top = (parseInt(el.style.top) + y) + "px";         
+        el.style.left = (parseInt(el.style.left) + x) + "px";
+        el.style.top = (parseInt(el.style.top) + y) + "px";
     }
     </script>
-    
+
     <h1>Move it!</h1>
-    
+
     <div id="display">
         <div id="el" style="left: 290px; top: 190px"></div>
         <div id="sizingEl"></div>
     </div>
-    
+
     <table id="controls" summary="controls">
         <tr>
-			<td><a href="javascript:moveEl(-20, -20)">↖</a></td>
+            <td><a href="javascript:moveEl(-20, -20)">↖</a></td>
             <td><a href="javascript:moveEl(0, -20)">↑</a></td>
             <td><a href="javascript:moveEl(20, -20)">↗</a></td>
         </tr>
@@ -41,6 +39,6 @@
             <td><a href="javascript:moveEl(20, 20)">↘</a></td>
         </tr>
     </table>
-    
-</body>
+
+  </body>
 </html>

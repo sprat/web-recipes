@@ -3,52 +3,54 @@
     padding: 0;
 }
 
-h1, p{
+h1,
+p {
     margin-bottom: 10px;
 }
-#container{
+
+#container {
     width: 900px;
     margin: 0 auto;
 }
 
 #header,
 #content,
-#footer{
+#footer {
     border: 1px solid black;
     background: #ccc;
 }
 
 #header,
-#content{
-    margin-bottom: 10px;	
+#content {
+    margin-bottom: 10px;
 }
 
 #header,
-#footer{
+#footer {
     padding: 10px;
 }
 
-#content{
+#content {
     overflow: auto; /* trick to get the float cleared */
 }
 
-* html #content{ 
+* html #content {
     height: 1%; /* IE6 additional trick, triggers hasLayout */
 }
 
 #leftcol,
-#rightcol{
+#rightcol {
     padding: 10px;
     width: 427px;
 }
 
-#leftcol{
+#leftcol {
     float: left;
     border: 1px solid #800;
     background: #f00;
 }
 
-#rightcol{
+#rightcol {
     float: right;
     border: 1px solid #080;
     background: #0f0;

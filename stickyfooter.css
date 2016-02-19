@@ -6,41 +6,42 @@
 
 * {
     margin: 0;
-    padding: 0;     
+    padding: 0;
 }
 
-html, body{
+html,
+body {
     height: 100%;  /* 100% high viewport */
 }
 
-#container{
+#container {
     min-height: 100%;
     width: 900px;
-    margin: 0 auto;      
+    margin: 0 auto;
     background: #888;
 }
 
 /* Opera "redraw" bug fix */
-body:before {  
+body:before {
     content: "";
     float: left;
     height: 100%;
     margin-top: -999em;
 }
 
-#header{
+#header {
     height: 120px;
     background: #c00;
 }
 
-#content{
+#content {
     background: #0c0;
     padding-bottom: 120px;  /* = height of the footer */
 }
 
-#footer{
+#footer {
     height: 120px;
-    width: 900px;      
-    margin: -120px auto 0;  /* margin-top = height of the footer */    
+    width: 900px;
+    margin: -120px auto 0;  /* margin-top = height of the footer */
     background: #00c;
 }

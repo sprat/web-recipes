@@ -1,9 +1,11 @@
 body {
     background: #CCC;
 }
+
 h1 {
     text-align: center;
 }
+
 #display {
     position: relative;
     display: block;
@@ -14,6 +16,7 @@ h1 {
     background: #FFF;
     overflow: auto;
 }
+
 #el {
     position: absolute;
     width: 20px;
@@ -21,18 +24,20 @@ h1 {
     background: #CCF;
     border: 1px solid #888;
 }
+
 #sizingEl {
-    /*display: none;*/
-    position: absolute;            
+    position: absolute;
     width: 1px;
     height: 1px;
     background: transparent;
     left:1000px; 
     top: 1000px;
 }
-#controls {            
-    margin: 20px auto 0;            
+
+#controls {
+    margin: 20px auto 0;
 }
+
 #controls a {
     color: #000;
     font-weight: bold;
