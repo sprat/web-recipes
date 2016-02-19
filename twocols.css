@@ -1,57 +1,50 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-h1,
-p {
-    margin-bottom: 10px;
-}
-
-#container {
+header,
+section,
+footer {
+    border: 1px solid black;
+    background: #ccc;
     width: 900px;
     margin: 0 auto;
 }
 
-#header,
-#content,
-#footer {
-    border: 1px solid black;
-    background: #ccc;
-}
-
-#header,
-#content {
+header,
+section {
     margin-bottom: 10px;
 }
 
-#header,
-#footer {
+header,
+footer {
     padding: 10px;
 }
 
-#content {
+section {
     overflow: auto; /* trick to get the float cleared */
 }
 
-* html #content {
-    height: 1%; /* IE6 additional trick, triggers hasLayout */
-}
-
-#leftcol,
-#rightcol {
+.column {
     padding: 10px;
-    width: 427px;
+    width: 50%;
 }
 
-#leftcol {
+.column.left {
     float: left;
-    border: 1px solid #800;
     background: #f00;
 }
 
-#rightcol {
+.column.right {
     float: right;
-    border: 1px solid #080;
     background: #0f0;
 }
